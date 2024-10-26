@@ -1,0 +1,85 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Skip to Main Content Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 1rem;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+/* Box Model for Images */
+img {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid Layout for Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* Flex Layout for Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* nth-child Styling */
+.gallery-grid img:nth-child(odd) {
+    border-radius: 20px;
+}
+.gallery-grid img:nth-child(even) {
+    border-radius: 50px;
+}
